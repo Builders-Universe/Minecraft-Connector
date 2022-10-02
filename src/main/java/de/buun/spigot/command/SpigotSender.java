@@ -1,4 +1,4 @@
-package de.buun.spigot;
+package de.buun.spigot.command;
 
 import de.daver.buun.core.command.Sender;
 import org.bukkit.command.CommandSender;

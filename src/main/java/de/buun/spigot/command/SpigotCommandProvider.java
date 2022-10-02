@@ -1,6 +1,5 @@
-package de.buun.spigot;
+package de.buun.spigot.command;
 
-import de.buun.spigot.command.SpigotCommandArguments;
 import de.daver.buun.core.command.Command;
 import de.daver.buun.core.command.CommandArguments;
 import de.daver.buun.core.command.CommandProvider;
