@@ -1,35 +1,28 @@
-import org.gradle.api.publish.maven.MavenPublication
-
 plugins {
     id 'java'
     id 'maven-publish'
 }
 
-group 'de.buun'
+group 'de.daver.buun'
 version '1.0.0-preAlpha'
-
-compileJava {
-    sourceCompatibility = 17
-    targetCompatibility = 17
-}
 
 repositories {
     mavenCentral()
-    maven{ url = uri("https://repo.papermc.io/repository/maven-public/")}
+    maven{ url "https://repo.papermc.io/repository/maven-public/"}
     maven{ url 'https://jitpack.io'}
 }
 
 dependencies {
-    implementation("io.papermc.paper:paper-api:1.19.2-R0.1-SNAPSHOT")
-    implementation("com.github.Builders-Universe:Universe-Core:pre-alpha-5")
+    compileOnly("io.papermc.paper:paper-api:1.19.2-R0.1-SNAPSHOT")
+    compileOnly("com.github.Builders-Universe:Universe-Core:pre-alpha-5")
 }
 
 publishing{
     publications{
         mavenJava(MavenPublication){
             groupId = 'de.daver.buun'
-            artifactId = 'spigot'
-            version = '1.0.2'
+            artifactId = 'minecraft'
+            version = '1.0.0-preAlpha'
             from components.java
         }
     }
