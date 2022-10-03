@@ -24,7 +24,7 @@ publishing{
         mavenJava(MavenPublication){
             groupId = 'de.daver.buun'
             artifactId = 'spigot'
-            version = project.version
+            version = '1.0.2'
             from components.java
         }
     }
