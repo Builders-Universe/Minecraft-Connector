@@ -6,6 +6,11 @@ plugins {
 group 'de.daver.buun'
 version '1.0.0-preAlpha'
 
+compileJava{
+    sourceCompatibility = 17
+    targetCompatibility = 17
+}
+
 repositories {
     mavenCentral()
     maven{ url "https://repo.papermc.io/repository/maven-public/"}
